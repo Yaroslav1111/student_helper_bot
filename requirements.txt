@@ -1,0 +1,23 @@
+# requirements.txt (ИСПРАВЛЕННАЯ ВЕРСИЯ)
+
+# --- Core App & API ---
+fastapi
+uvicorn[standard]
+
+# --- Database ---
+sqlalchemy[asyncio]
+asyncpg # ПРАВИЛЬНЫЙ ДРАЙВЕР для асинхронной работы с PostgreSQL
+alembic 
+
+# --- Telegram Bot ---
+aiogram>=3.5.0
+
+# --- RAG & AI ---
+langchain
+langchain-openai
+chromadb
+pypdf
+
+# --- Configuration ---
+python-dotenv
+pydantic-settings
